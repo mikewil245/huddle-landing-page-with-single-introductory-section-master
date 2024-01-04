@@ -1,0 +1,68 @@
+:root {
+  /*Primary color */
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-color: var(--Violet);
+  background-size: contain;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* 150% */
+  margin-bottom: 24px;
+}
+
+a {
+  display: block;
+  max-width: 200px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 70px;
+  /* Centering */
+}
+
+a:hover {
+  background-color: var(--SoftMagenta);
+  color: #fff;
+}
+
+.social-media:hover {
+  background-color: var(--SoftMagenta);
+}
+
+.social-media {
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid;
+  color: white;
+  object-fit: cover;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.social-media:hover {
+  color: var(--SoftMagenta);
+  cursor: pointer;
+}
