@@ -46,24 +46,23 @@ header {
 @media (min-width: 601px) {
   body {
     background-image: url(images/bg-desktop.svg);
-    position: relative;
-
-    overflow-x: hidden;
   }
 
   header {
-    margin-bottom: 100px;
-    position: relative;
-    top: 50px;
-    left: 60px;
+    margin-bottom: 90px;
+  }
+
+  .huddle-container {
+    padding: 30px;
   }
 
   .huddle-content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   p {
     line-height: 1.4;
+    padding-right: 1px;
   }
 
   .header-logo {
@@ -89,16 +88,10 @@ header {
     flex-shrink: 0;
   }
 
-  .huddle-image img {
-    max-width: 90%;
-  }
-
   footer {
     display: flex;
     gap: 10px;
-    position: relative;
-    bottom: 20px;
-    right: 50px;
+
     justify-content: flex-end;
   }
 }
