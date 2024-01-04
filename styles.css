@@ -41,12 +41,21 @@ header {
 
 .huddle-container {
   margin: 0 auto;
-  padding: 50px;
 }
 
 @media (min-width: 601px) {
   body {
     background-image: url(images/bg-desktop.svg);
+    position: relative;
+
+    overflow-x: hidden;
+  }
+
+  header {
+    margin-bottom: 100px;
+    position: relative;
+    top: 50px;
+    left: 60px;
   }
 
   .huddle-content h1 {
@@ -61,30 +70,35 @@ header {
     max-width: 15%;
   }
 
-  .huddle-container {
-    max-width: 1280px;
+  main {
+    display: flex;
+    justify-content: space-evenly;
   }
 
-  main {
-    max-width: 100%;
-    display: flex;
-    gap: 40px;
-    padding: 20px 35px;
+  main a {
+    width: 150px;
   }
 
   .huddle-content {
-    max-width: 375px;
     margin-top: 80px;
-    margin-left: 20px;
+    max-width: 450px;
   }
 
   .huddle-image {
     margin-top: 20px;
+    flex-shrink: 0;
+  }
+
+  .huddle-image img {
+    max-width: 95%;
   }
 
   footer {
     display: flex;
     gap: 10px;
+    position: relative;
+    bottom: 20px;
+    right: 50px;
     justify-content: flex-end;
   }
 }
@@ -92,6 +106,10 @@ header {
 @media (max-width: 600px) {
   body {
     background-image: url(images/bg-mobile.svg);
+  }
+
+  .huddle-container {
+    padding: 50px;
   }
 
   h1 {
